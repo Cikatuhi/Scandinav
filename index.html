@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Скандинав — строительство загородных домов под ключ в Самарской области. Понятная смета, собственная команда и гарантия на работы.">
+  <meta name="theme-color" content="#526653">
+  <title>Скандинав — загородные дома под ключ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Скандинав — на главную">
+        <span class="logo-mark" aria-hidden="true">⌂</span>
+        <span><strong>СКАНДИНАВ</strong><small>строительная компания</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a href="#projects">Проекты</a>
+        <a href="#process">Как строим</a>
+        <a href="#about">О компании</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="header-phone" href="tel:+78461234567" aria-label="Позвонить по номеру +7 846 123 45 67">+7 (846) 123-45-67</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav class="mobile-menu-nav" aria-label="Мобильная навигация">
+        <a href="#top">Главная</a>
+        <a href="#projects">Проекты</a>
+        <a href="#process">Как строим</a>
+        <a href="#about">О компании</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <a class="button button-light menu-cta" href="#lead-form">Рассчитать стоимость <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Современный деревянный дом среди хвойного леса в тёплом вечернем свете"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="overline">Загородные дома под ключ</p>
+        <h1 id="hero-title">Строим дома, в которые хочется возвращаться</h1>
+        <p class="hero-subtitle">Загородные дома под ключ с понятной сметой и гарантией на работы</p>
+        <div class="hero-actions">
+          <a class="button button-accent" href="#lead-form">Рассчитать стоимость <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#projects">Посмотреть проекты <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note"><span class="note-dot" aria-hidden="true"></span> Строим в Самарской области и рядом</div>
+      </div>
+    </section>
+
+    <section class="benefits section container" aria-labelledby="benefits-title">
+      <div class="section-intro compact-intro">
+        <p class="overline overline-dark">Наш подход</p>
+        <h2 id="benefits-title">Почему нам доверяют</h2>
+      </div>
+      <div class="benefit-list" id="benefit-list"></div>
+    </section>
+
+    <section class="projects section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-intro">
+          <p class="overline overline-dark">Каталог домов</p>
+          <h2 id="projects-title">Проекты домов</h2>
+          <p>Подберём дом под ваш участок, семью и образ жизни</p>
+        </div>
+        <div class="filter-wrap" aria-label="Фильтр проектов">
+          <div class="filters" id="project-filters" role="tablist" aria-label="Фильтры проектов"></div>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+        <p class="empty-state" id="projects-empty" hidden>По этому фильтру пока нет проектов. Попробуйте другой вариант.</p>
+      </div>
+    </section>
+
+    <section class="process section container" id="process" aria-labelledby="process-title">
+      <div class="section-intro">
+        <p class="overline overline-dark">Понятный путь</p>
+        <h2 id="process-title">Как строим</h2>
+        <p>Вы знаете, что происходит на каждом этапе — от первого разговора до ключей.</p>
+      </div>
+      <ol class="timeline" id="process-list"></ol>
+    </section>
+
+    <section class="completed section" id="completed" aria-labelledby="completed-title">
+      <div class="container">
+        <div class="section-heading-row">
+          <div class="section-intro">
+            <p class="overline overline-dark">Наши дома</p>
+            <h2 id="completed-title">Реализованные проекты</h2>
+          </div>
+          <a class="text-link desktop-only" href="#lead-form">Обсудить свой проект <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="completed-card">
+          <div class="completed-photo">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Дом «Лесной» с панорамными окнами среди сосен" loading="lazy">
+            <span class="photo-badge">Дом «Лесной»</span>
+          </div>
+          <div class="completed-details">
+            <p class="overline overline-dark">Самарская область · посёлок Управленческий</p>
+            <h3>Дом «Лесной»</h3>
+            <p class="completed-meta">168 м² <span aria-hidden="true">·</span> построен за 8 месяцев</p>
+            <p>Тёплый семейный дом с панорамным остеклением, камином и террасой, которая выходит в сосновый лес.</p>
+            <a class="button button-dark" href="#lead-form">Хочу такой дом <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="completed-strip" aria-label="Другие реализованные проекты">
+          <figure><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Современный дом «Речная линия»" loading="lazy"><figcaption>«Речная линия» · 124 м²</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Дом «Тихий сад» с деревянным фасадом" loading="lazy"><figcaption>«Тихий сад» · 196 м²</figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Дом «Светлый берег»" loading="lazy"><figcaption>«Светлый берег» · 142 м²</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust section" id="about" aria-labelledby="trust-title">
+      <div class="container trust-layout">
+        <div class="trust-copy">
+          <p class="overline">О компании</p>
+          <h2 id="trust-title">Строим не просто дом — создаём место для жизни</h2>
+          <p>Берём на себя весь путь: от идеи и проекта до благоустройства и передачи ключей. Работаем спокойно, открыто и с уважением к вашему времени.</p>
+        </div>
+        <ul class="trust-points">
+          <li><strong>10+</strong><span>лет опыта</span></li>
+          <li><strong>0 ₽</strong><span>непредвиденных доплат</span></li>
+          <li><strong>100%</strong><span>контроль каждого этапа</span></li>
+          <li><strong>5 лет</strong><span>гарантия на работы</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reviews section container" id="reviews" aria-labelledby="reviews-title">
+      <div class="section-intro">
+        <p class="overline overline-dark">Живые истории</p>
+        <h2 id="reviews-title">Клиенты рекомендуют нас</h2>
+      </div>
+      <article class="review-card">
+        <div class="review-image"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Светлая гостиная в доме семьи Алексея и Марины" loading="lazy"></div>
+        <div class="review-content">
+          <div class="quote-mark" aria-hidden="true">“</div>
+          <blockquote>Отдельно понравилось, что на каждом этапе мы понимали, за что платим и что будет дальше. Дом получили в оговорённые сроки.</blockquote>
+          <div class="review-author"><span class="author-avatar" aria-hidden="true">АМ</span><span><strong>Алексей и Марина</strong><small>Самара · дом 142 м²</small></span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="cta section" aria-labelledby="cta-title">
+      <div class="cta-photo" aria-hidden="true"></div>
+      <div class="cta-shade" aria-hidden="true"></div>
+      <div class="container cta-content">
+        <p class="overline">Следующий шаг</p>
+        <h2 id="cta-title">Готовы построить свой дом?</h2>
+        <p>Расскажите, каким вы хотите видеть свой будущий дом. Мы предложим подходящий проект и предварительно рассчитаем стоимость.</p>
+        <a class="button button-accent" href="#lead-form">Рассчитать стоимость <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="lead-section section" id="lead-form" aria-labelledby="form-title">
+      <div class="container lead-layout">
+        <div class="section-intro">
+          <p class="overline overline-dark">Бесплатная консультация</p>
+          <h2 id="form-title">Рассчитаем стоимость вашего дома</h2>
+          <p>Оставьте контакты — свяжемся с вами и обсудим ваш проект.</p>
+          <div class="lead-assurance"><span aria-hidden="true">✓</span> Ответим в течение 15 минут в рабочее время</div>
+        </div>
+        <form class="lead-form" id="lead-form-element" novalidate>
+          <div class="field"><label for="name">Ваше имя</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться?"><span class="field-error" aria-live="polite"></span></div>
+          <div class="field"><label for="phone">Номер телефона</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__"><span class="field-error" aria-live="polite"></span></div>
+          <div class="field"><label for="wishes">Площадь или пожелания</label><textarea id="wishes" name="wishes" rows="3" placeholder="Например: одноэтажный дом 120 м² с террасой"></textarea><span class="field-error" aria-live="polite"></span></div>
+          <button class="button button-dark form-submit" type="submit"><span class="submit-label">Получить предварительный расчёт</span><span class="submit-spinner" aria-hidden="true"></span><span aria-hidden="true">↗</span></button>
+          <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="#privacy">политикой конфиденциальности</a>.</p>
+          <div class="form-success" role="status" aria-live="polite" hidden>Спасибо! Заявка отправлена. Мы свяжемся с вами в ближайшее время.</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="logo logo-dark" href="#top"><span class="logo-mark" aria-hidden="true">⌂</span><span><strong>СКАНДИНАВ</strong><small>строительная компания</small></span></a><p>Строительство загородных домов под ключ с 2014 года.</p></div>
+      <div class="footer-column"><h3>Навигация</h3><a href="#projects">Проекты</a><a href="#process">Как строим</a><a href="#about">О компании</a><a href="#reviews">Отзывы</a></div>
+      <div class="footer-column"><h3>Контакты</h3><a class="footer-phone" href="tel:+78461234567">+7 (846) 123-45-67</a><a href="https://t.me/" rel="noopener">Telegram</a><a href="https://wa.me/78461234567" rel="noopener">WhatsApp</a><p>Самарская область,<br>г. Самара, ул. Леонова, 23</p></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="current-year">2026</span> «Скандинав»</span><a id="privacy" href="#privacy">Политика конфиденциальности</a></div>
+  </footer>
+
+  <div class="mobile-bottom-bar" aria-label="Быстрые действия">
+    <a class="bottom-call" href="tel:+78461234567"><span aria-hidden="true">◌</span>Позвонить</a>
+    <a class="bottom-calc" href="#lead-form">Получить расчёт <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
