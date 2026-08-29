@@ -25,10 +25,8 @@ button { cursor: pointer; }
 
 .site-header { position: absolute; z-index: 10; inset: 0 0 auto; color: var(--color-white); }
 .header-inner { min-height: 76px; display: flex; align-items: center; gap: 18px; }
-.logo { display: inline-flex; align-items: center; gap: 9px; min-height: 48px; letter-spacing: .18em; }
-.logo-mark { display: grid; place-items: center; width: 27px; height: 27px; border: 1px solid currentColor; border-radius: 50%; font-size: 16px; line-height: 1; letter-spacing: 0; }
-.logo strong { display: block; font-size: 14px; font-weight: 800; line-height: 1.1; }
-.logo small { display: block; margin-top: 4px; font-size: 9px; font-weight: 500; letter-spacing: .02em; opacity: .74; }
+.logo { display: inline-flex; align-items: center; width: 145px; min-height: 48px; }
+.logo-image { display: block; width: 100%; height: auto; }
 .desktop-nav { display: none; }
 .header-phone { display: none; margin-left: auto; font-size: 14px; font-weight: 600; }
 .menu-toggle { display: grid; gap: 5px; width: 48px; height: 48px; margin-left: auto; padding: 14px 10px; border: 1px solid rgba(255,255,255,.32); border-radius: 50%; color: inherit; background: rgba(37,42,39,.18); }
@@ -233,6 +231,7 @@ blockquote { margin: 14px 0 25px; font-size: 20px; font-weight: 600; line-height
   body { padding-bottom: 0; }
   .container { padding-inline: 40px; }
   .site-header { position: absolute; }
+  .logo { width: 180px; }
   .header-inner { min-height: 92px; }
   .desktop-nav { display: flex; align-items: center; gap: clamp(15px, 2.5vw, 34px); margin-inline: auto; font-size: 14px; }
   .desktop-nav a { opacity: .82; transition: opacity .2s ease; }
